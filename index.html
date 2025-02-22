@@ -22,40 +22,69 @@
       color: white;
       display: flex;
       justify-content: flex-end;
-      padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 30px 40px; /* Größerer Balken */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       z-index: 1000;
     }
 
     .navbar a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 30px;
+      font-size: 18px; /* Größere Schrift */
       font-weight: bold;
     }
 
     .navbar a:hover {
-      color: #ffd166; /* Pastellgelb */
+      color: #ffd166; /* Dezentes Gelb beim Hover */
     }
 
     /* Sections */
     section {
-      padding: 100px 20px;
-      margin-top: 60px;
+      padding: 120px 40px;
+      margin-top: 100px;
     }
 
     #home {
-      background-color: #ffe5d9; /* Pastelllachs */
-      text-align: center;
-      padding: 150px 20px;
+      background-color: #e0bbf9; /* Pastell-Lila */
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 150px 40px;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #ccc; /* Platzhalterfarbe */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .intro-text {
+      max-width: 500px;
     }
 
     h1 {
-      color: #000;
+      font-size: 32px;
+      margin: 10px 0;
     }
 
     h2 {
       color: #ffb4a2; /* Sanfter Lachston */
+      font-size: 28px;
+    }
+
+    h3 {
+      color: #333;
+      font-size: 20px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: underline;
     }
 
     footer {
@@ -72,50 +101,54 @@
     <a href="#about">About</a>
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
-    <a href="#activities">Community Engagement</a>
-    <a href="#presentations">Presentations</a>
+    <a href="#activities">Activities</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Sections -->
+  <!-- Home Section -->
   <section id="home">
-    <h1>Welcome to AM Planitzer's Website</h1>
-    <p>Researcher | Scientist | Community Advocate</p>
+    <div class="profile-pic" style="background-image: url('link-zu-deinem-bild.jpg');"></div>
+    <div class="intro-text">
+      <h1>Anna Maria Planitzer</h1>
+      <h3>PhD Candidate in Political Communication</h3>
+      <p><a href="https://www.univie.ac.at" target="_blank">University of Vienna</a></p>
+      <p>Text text text...</p>
+    </div>
   </section>
 
-  <section id="about">
+  <!-- About Section -->
+  <section id="about" style="background-color: #c5dff8;">
     <h2>About Me</h2>
-    <p>This is where you can write a brief introduction about yourself, your academic background, and your research interests.</p>
+    <p>Write something about yourself here.</p>
   </section>
 
-  <section id="research">
+  <!-- Research Section -->
+  <section id="research" style="background-color: #e0bbf9;">
     <h2>Research</h2>
-    <p>Describe your current research projects, focus areas, or collaborations here.</p>
+    <p>Describe your current research projects.</p>
   </section>
 
-  <section id="publications">
+  <!-- Publications Section -->
+  <section id="publications" style="background-color: #f7c6e0;">
     <h2>Publications</h2>
-    <p>List your most important publications with links to the papers.</p>
+    <p>List your important publications with links.</p>
   </section>
 
-  <section id="activities">
-    <h2>Community Engagement</h2>
-    <p>Mention your representative positions, organizational roles, or volunteer work.</p>
+  <!-- Activities Section -->
+  <section id="activities" style="background-color: #c5dff8;">
+    <h2>Activities</h2>
+    <p>List your community engagements here.</p>
   </section>
 
-  <section id="presentations">
-    <h2>Presentations</h2>
-    <p>Share information about talks, workshops, or conferences where you’ve presented.</p>
-  </section>
-
-  <section id="contact">
+  <!-- Contact Section -->
+  <section id="contact" style="background-color: #e0bbf9;">
     <h2>Contact</h2>
     <p>Email: your.email@example.com</p>
     <p>LinkedIn | GitHub | Twitter (optional icons later)</p>
   </section>
 
   <footer>
-    <p>&copy; 2024 AM Planitzer. All rights reserved.</p>
+    <p>&copy; 2024 Anna Maria Planitzer. All rights reserved.</p>
   </footer>
 </body>
 </html>
