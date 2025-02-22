@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AM Planitzer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Abadi MT', Arial, sans-serif;
+      font-family: 'Gotu', sans-serif;
       background-color: #fdf8f3; /* Cremefarbe */
       color: #333;
       scroll-behavior: smooth;
@@ -22,7 +23,7 @@
       color: white;
       display: flex;
       justify-content: center;
-      padding: 30px 40px;
+      padding: 20px 30px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       z-index: 1000;
     }
@@ -30,14 +31,14 @@
     .navbar a {
       color: white;
       text-decoration: none;
-      margin: 0 20px;
-      font-size: 18px;
+      margin: 0 10px;
+      font-size: 16px;
       font-weight: bold;
     }
 
     .navbar a::after {
       content: '|';
-      margin-left: 20px;
+      margin-left: 10px;
       color: white;
     }
 
@@ -51,8 +52,8 @@
 
     /* Sections */
     section {
-      padding: 120px 40px;
-      margin-top: 100px;
+      padding: 100px 40px;
+      margin-top: 80px;
     }
 
     #home {
@@ -65,32 +66,37 @@
     }
 
     .profile-pic {
-      width: 300px;
-      height: 300px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       background-color: #ccc;
       background-size: cover;
       background-position: center;
+      margin-left: -50px;
     }
 
     .intro-text {
       max-width: 500px;
-      text-align: center;
+      text-align: left;
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 24px;
       margin: 10px 0;
-    }
-
-    h2 {
-      color: #333;
-      font-size: 28px;
+      text-align: center;
     }
 
     h3 {
-      color: #333;
-      font-size: 20px;
+      color: #aaa;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .university-link {
+      color: #e6b3ff;
+      text-align: center;
+      display: block;
+      margin-bottom: 20px;
     }
 
     a {
@@ -106,11 +112,33 @@
     }
 
     /* Pastellfarben */
-    #about { background-color: #f2e8fc; } /* Blasses Lila */
-    #research { background-color: #e6f1fc; } /* Blasses Blau */
-    #publications { background-color: #fde8f3; } /* Blasses Pink */
-    #activities { background-color: #e6f1fc; } /* Blasses Blau */
-    #contact { background-color: #f2e8fc; } /* Blasses Lila */
+    #about { background-color: #f6f0fb; } /* Blasser Lila */
+    #research { background-color: #eef7fd; } /* Blasses Blau */
+    #publications { background-color: #fdeef7; } /* Blasses Pink */
+    #activities { background-color: #eef7fd; } /* Blasses Blau */
+    #contact { background-color: #f6f0fb; } /* Blasser Lila */
+
+    /* Section Headings */
+    .section-title {
+      text-align: left;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .section-content {
+      margin-left: 30px;
+    }
+
+    /* Dünnere Linien */
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #fdf8f3;
+      width: 50%;
+      margin: 40px auto;
+    }
   </style>
 </head>
 <body>
@@ -129,7 +157,7 @@
       <div class="profile-pic" style="background-image: url('link-zu-deinem-bild.jpg');"></div>
       <h1>Anna Maria Planitzer</h1>
       <h3>PhD Candidate in Political Communication</h3>
-      <p><a href="https://www.univie.ac.at" target="_blank">University of Vienna</a></p>
+      <a class="university-link" href="https://www.univie.ac.at" target="_blank">University of Vienna</a>
     </div>
     <div class="intro-text">
       <p>Text text text...</p>
@@ -140,33 +168,47 @@
 
   <!-- About Section -->
   <section id="about">
-    <h2>ABOUT</h2>
-    <p>Write something about yourself here.</p>
+    <div class="section-title">ABOUT</div>
+    <div class="section-content">
+      <p>Write something about yourself here.</p>
+    </div>
   </section>
+  <hr>
 
   <!-- Research Section -->
   <section id="research">
-    <h2>RESEARCH</h2>
-    <p>Describe your current research projects.</p>
+    <div class="section-title">RESEARCH</div>
+    <div class="section-content">
+      <p>Describe your current research projects.</p>
+    </div>
   </section>
+  <hr>
 
   <!-- Publications Section -->
   <section id="publications">
-    <h2>PUBLICATIONS</h2>
-    <p>List your important publications with links.</p>
+    <div class="section-title">PUBLICATIONS</div>
+    <div class="section-content">
+      <p>List your important publications with links.</p>
+    </div>
   </section>
+  <hr>
 
   <!-- Activities Section -->
   <section id="activities">
-    <h2>ACTIVITIES</h2>
-    <p>List your community engagements here.</p>
+    <div class="section-title">ACTIVITIES</div>
+    <div class="section-content">
+      <p>List your community engagements here.</p>
+    </div>
   </section>
+  <hr>
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>CONTACT</h2>
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn | GitHub | Twitter (optional icons later)</p>
+    <div class="section-title">CONTACT</div>
+    <div class="section-content">
+      <p>Email: your.email@example.com</p>
+      <p>LinkedIn | GitHub | Twitter (optional icons later)</p>
+    </div>
   </section>
 
   <footer>
