@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Abadi MT', Arial, sans-serif;
       background-color: #fdf8f3; /* Cremefarbe */
       color: #333;
       scroll-behavior: smooth;
@@ -21,8 +21,8 @@
       background-color: #000; /* Schwarz */
       color: white;
       display: flex;
-      justify-content: flex-end;
-      padding: 30px 40px; /* Größerer Balken */
+      justify-content: center;
+      padding: 30px 40px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       z-index: 1000;
     }
@@ -30,13 +30,23 @@
     .navbar a {
       color: white;
       text-decoration: none;
-      margin-left: 30px;
-      font-size: 18px; /* Größere Schrift */
+      margin: 0 20px;
+      font-size: 18px;
       font-weight: bold;
     }
 
+    .navbar a::after {
+      content: '|';
+      margin-left: 20px;
+      color: white;
+    }
+
+    .navbar a:last-child::after {
+      content: '';
+    }
+
     .navbar a:hover {
-      color: #ffd166; /* Dezentes Gelb beim Hover */
+      color: #ffd166;
     }
 
     /* Sections */
@@ -46,7 +56,7 @@
     }
 
     #home {
-      background-color: #e0bbf9; /* Pastell-Lila */
+      background-color: #fdf8f3;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -55,25 +65,26 @@
     }
 
     .profile-pic {
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
-      background-color: #ccc; /* Platzhalterfarbe */
+      background-color: #ccc;
       background-size: cover;
       background-position: center;
     }
 
     .intro-text {
       max-width: 500px;
+      text-align: center;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 36px;
       margin: 10px 0;
     }
 
     h2 {
-      color: #ffb4a2; /* Sanfter Lachston */
+      color: #333;
       font-size: 28px;
     }
 
@@ -93,56 +104,67 @@
       text-align: center;
       padding: 10px;
     }
+
+    /* Pastellfarben */
+    #about { background-color: #f2e8fc; } /* Blasses Lila */
+    #research { background-color: #e6f1fc; } /* Blasses Blau */
+    #publications { background-color: #fde8f3; } /* Blasses Pink */
+    #activities { background-color: #e6f1fc; } /* Blasses Blau */
+    #contact { background-color: #f2e8fc; } /* Blasses Lila */
   </style>
 </head>
 <body>
   <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#activities">Activities</a>
-    <a href="#contact">Contact</a>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#research">RESEARCH</a>
+    <a href="#publications">PUBLICATIONS</a>
+    <a href="#activities">ACTIVITIES</a>
+    <a href="#contact">CONTACT</a>
   </nav>
 
   <!-- Home Section -->
   <section id="home">
-    <div class="profile-pic" style="background-image: url('link-zu-deinem-bild.jpg');"></div>
-    <div class="intro-text">
+    <div>
+      <div class="profile-pic" style="background-image: url('link-zu-deinem-bild.jpg');"></div>
       <h1>Anna Maria Planitzer</h1>
       <h3>PhD Candidate in Political Communication</h3>
       <p><a href="https://www.univie.ac.at" target="_blank">University of Vienna</a></p>
+    </div>
+    <div class="intro-text">
       <p>Text text text...</p>
+      <h3>RESEARCH INTERESTS:</h3>
+      <p>...</p>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" style="background-color: #c5dff8;">
-    <h2>About Me</h2>
+  <section id="about">
+    <h2>ABOUT</h2>
     <p>Write something about yourself here.</p>
   </section>
 
   <!-- Research Section -->
-  <section id="research" style="background-color: #e0bbf9;">
-    <h2>Research</h2>
+  <section id="research">
+    <h2>RESEARCH</h2>
     <p>Describe your current research projects.</p>
   </section>
 
   <!-- Publications Section -->
-  <section id="publications" style="background-color: #f7c6e0;">
-    <h2>Publications</h2>
+  <section id="publications">
+    <h2>PUBLICATIONS</h2>
     <p>List your important publications with links.</p>
   </section>
 
   <!-- Activities Section -->
-  <section id="activities" style="background-color: #c5dff8;">
-    <h2>Activities</h2>
+  <section id="activities">
+    <h2>ACTIVITIES</h2>
     <p>List your community engagements here.</p>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" style="background-color: #e0bbf9;">
-    <h2>Contact</h2>
+  <section id="contact">
+    <h2>CONTACT</h2>
     <p>Email: your.email@example.com</p>
     <p>LinkedIn | GitHub | Twitter (optional icons later)</p>
   </section>
