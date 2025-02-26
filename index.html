@@ -1,68 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
-    <style>
-        body {
-            font-family: Georgia, serif;
-            background-color: #F5F5DC; /* Cream color */
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .container {
-            width: 60%;
-            margin: auto;
-            padding: 20px;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            display: block;
-            margin: 20px auto;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 10px 0;
-            font-family: Georgia, serif;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin: 5px 0;
-            font-weight: normal;
-            font-family: Georgia, serif;
-        }
-        .section {
-            margin: 40px 0;
-            padding-bottom: 20px;
-            border-bottom: 2px solid black; /* Changed to black */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AM Planitzer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #F5F5DC; /* Warm light crème */
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .navbar a::after {
+      content: '|';
+      margin-left: 5px;
+      color: white;
+    }
+
+    .navbar a:last-child::after {
+      content: '';
+    }
+
+    .navbar a:hover {
+      color: #ffd166;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 40px;
+      margin-top: 80px;
+    }
+
+    #home {
+      background-color: #F5E6DA; /* Slightly warmer crème for contrast */
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 100px 40px;
+    }
+
+    .profile-container {
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid black;
+    }
+
+    .intro-text {
+      max-width: 400px;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    h3 {
+      color: #555;
+      font-size: 16px;
+      text-align: center;
+      margin: 2px 0;
+    }
+
+    .university-link {
+      color: #8B5E3B;
+      text-align: center;
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Section Styling */
+    .section-title {
+      text-align: left;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+      text-transform: uppercase; /* All CAPITAL LETTERS */
+    }
+
+    .section-content {
+      margin-left: 30px;
+    }
+
+    /* Black Section Dividers */
+    hr {
+      border: none;
+      height: 2px;
+      background-color: black;
+      width: 50%;
+      margin: 40px auto;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
-        <h1>Your Name</h1>
-        <h2>Your Affiliation</h2>
-        
-        <div class="section">
-            <h3>About Me</h3>
-            <p>Write a short introduction about yourself here.</p>
-        </div>
-        
-        <div class="section">
-            <h3>Projects</h3>
-            <p>Highlight some of your key projects or work here.</p>
-        </div>
-        
-        <div class="section">
-            <h3>Contact</h3>
-            <p>Provide your email or social media links here.</p>
-        </div>
+  <nav class="navbar">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#research">RESEARCH</a>
+    <a href="#publications">PUBLICATIONS</a>
+    <a href="#activities">ACTIVITIES</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="profile-container">
+      <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-pic">
+      <h1>Anna Maria Planitzer</h1>
+      <h3>PhD Candidate in Political Communication</h3>
+      <a class="university-link" href="https://www.univie.ac.at" target="_blank">University of Vienna</a>
     </div>
+    <div class="intro-text">
+      <p>Text text text...</p>
+      <h3>RESEARCH INTERESTS:</h3>
+      <p>...</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-title">ABOUT</div>
+    <div class="section-content">
+      <p>Write something about yourself here.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Research Section -->
+  <section id="research">
+    <div class="section-title">RESEARCH</div>
+    <div class="section-content">
+      <p>Describe your current research projects.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Publications Section -->
+  <section id="publications">
+    <div class="section-title">PUBLICATIONS</div>
+    <div class="section-content">
+      <p>List your important publications with links.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Activities Section -->
+  <section id="activities">
+    <div class="section-title">ACTIVITIES</div>
+    <div class="section-content">
+      <p>List your community engagements here.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-title">CONTACT</div>
+    <div class="section-content">
+      <p>Email: your.email@example.com</p>
+      <p>LinkedIn | GitHub | Twitter (optional icons later)</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Anna Maria Planitzer. All rights reserved.</p>
+  </footer>
 </body>
 </html>
