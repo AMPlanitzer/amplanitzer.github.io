@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AM Planitzer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Andale+Mono&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: "Century Gothic", sans-serif;
-      background-color: #C4A484; /* Mocha Beige */
+      font-family: "Andale Mono", monospace;
+      background-color: #F6E3BA; /* beige final */
       color: black;
       scroll-behavior: smooth;
-      text-align: center;
     }
 
     /* Navbar */
@@ -21,14 +20,16 @@
       top: 0;
       width: 100%;
       background-color: #000;
+      color: white;
       display: flex;
       justify-content: center;
-      padding: 15px 0;
+      padding: 15px 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       z-index: 1000;
     }
 
     .navbar a {
-      color: #C4A484; /* Same color as background */
+      color: white; /* White text in the black navbar */
       text-decoration: none;
       margin: 0 15px;
       font-size: 16px;
@@ -36,22 +37,18 @@
     }
 
     .navbar a:hover {
-      color: #FFD166;
+      color: #ffd166;
     }
 
     /* Sections */
     section {
       padding: 80px 40px;
-      width: 60%;
-      margin: auto;
+      margin-top: 80px;
+      text-align: center;
     }
 
-    #home {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-top: 120px;
+    .profile-container {
+      text-align: center;
     }
 
     .profile-pic {
@@ -63,12 +60,25 @@
     }
 
     h1, h3 {
-      margin: 10px 0;
+      margin: 5px 0;
     }
 
     .university-link {
+      color: black; /* Black text for links */
+      text-decoration: underline;
       font-weight: bold;
-      text-decoration: none;
+    }
+
+    a {
+      color: black; /* All links in black */
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 10px;
     }
 
     /* Section Titles */
@@ -76,24 +86,17 @@
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 20px;
+      color: black;
       text-transform: uppercase;
     }
 
-    /* Black Section Dividers */
+    /* Section Dividers */
     hr {
       border: none;
       height: 2px;
       background-color: black;
       width: 50%;
       margin: 40px auto;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #000;
-      color: white;
-      text-align: center;
-      padding: 10px;
     }
   </style>
 </head>
@@ -109,10 +112,12 @@
 
   <!-- Home Section -->
   <section id="home">
-    <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-pic">
-    <h1>Anna Maria Planitzer</h1>
-    <h3>PhD Candidate in Political Communication</h3>
-    <a class="university-link" href="https://www.univie.ac.at" target="_blank">University of Vienna</a>
+    <div class="profile-container">
+      <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-pic">
+      <h1>Anna Maria Planitzer</h1>
+      <h3>PhD Candidate in Political Communication</h3>
+      <a class="university-link" href="https://www.univie.ac.at" target="_blank">University of Vienna</a>
+    </div>
   </section>
 
   <hr>
