@@ -9,8 +9,9 @@
     body {
       margin: 0;
       font-family: Georgia, serif;
-      background-color: #F5F5DC; /* Warm light crème */
+      background-color: #F5F5DC; /* Light beige */
       color: #333;
+      text-align: center;
       scroll-behavior: smooth;
     }
 
@@ -22,8 +23,9 @@
       background-color: #000;
       color: white;
       display: flex;
-      justify-content: space-between;
-      padding: 15px 30px;
+      justify-content: center; /* Center navbar */
+      gap: 20px;
+      padding: 15px 0;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       z-index: 1000;
     }
@@ -31,42 +33,22 @@
     .navbar a {
       color: white;
       text-decoration: none;
-      margin: 0 8px;
       font-size: 14px;
       font-weight: bold;
-    }
-
-    .navbar a::after {
-      content: '|';
-      margin-left: 5px;
-      color: white;
-    }
-
-    .navbar a:last-child::after {
-      content: '';
     }
 
     .navbar a:hover {
       color: #ffd166;
     }
 
-    /* Sections */
-    section {
-      padding: 80px 40px;
-      margin-top: 80px;
-    }
-
+    /* Home Section */
     #home {
-      background-color: #F5E6DA; /* Slightly warmer crème for contrast */
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 100px 40px;
-    }
-
-    .profile-container {
-      text-align: center;
+      justify-content: center;
+      height: 100vh; /* Full-screen height */
+      padding: 20px;
     }
 
     .profile-pic {
@@ -77,69 +59,49 @@
       border: 3px solid black;
     }
 
-    .intro-text {
-      max-width: 400px;
-      text-align: left;
-    }
-
     h1 {
-      font-size: 22px;
-      margin: 5px 0;
-      text-align: center;
+      font-size: 24px;
+      margin: 10px 0;
     }
 
     h3 {
       color: #555;
-      font-size: 16px;
-      text-align: center;
-      margin: 2px 0;
+      font-size: 18px;
+      margin: 5px 0;
     }
 
     .university-link {
       color: #8B5E3B;
-      text-align: center;
-      display: block;
-      margin-bottom: 10px;
       font-weight: bold;
+      text-decoration: none;
     }
 
-    a {
-      color: #000;
+    .university-link:hover {
       text-decoration: underline;
     }
 
+    /* Section Styling */
+    section {
+      padding: 80px 20px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase; /* All CAPITAL LETTERS */
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
     footer {
       background-color: #000;
       color: white;
-      text-align: center;
       padding: 10px;
-    }
-
-    /* Section Styling */
-    .section-title {
-      text-align: left;
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      color: #333;
-      text-transform: uppercase; /* All CAPITAL LETTERS */
-    }
-
-    .section-content {
-      margin-left: 30px;
-    }
-
-    /* Black Section Dividers */
-    hr {
-      border: none;
-      height: 2px;
-      background-color: black;
-      width: 50%;
-      margin: 40px auto;
     }
   </style>
 </head>
 <body>
+
   <nav class="navbar">
     <a href="#home">HOME</a>
     <a href="#about">ABOUT</a>
@@ -151,72 +113,46 @@
 
   <!-- Home Section -->
   <section id="home">
-    <div class="profile-container">
-      <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-pic">
-      <h1>Anna Maria Planitzer</h1>
-      <h3>PhD Candidate in Political Communication</h3>
-      <a class="university-link" href="https://www.univie.ac.at" target="_blank">University of Vienna</a>
-    </div>
-    <div class="intro-text">
-      <p>Text text text...</p>
-      <h3>RESEARCH INTERESTS:</h3>
-      <p>...</p>
-    </div>
+    <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-pic">
+    <h1>Anna Maria Planitzer</h1>
+    <h3>PhD Candidate in Political Communication</h3>
+    <a class="university-link" href="https://www.univie.ac.at" target="_blank">University of Vienna</a>
   </section>
-
-  <hr>
 
   <!-- About Section -->
   <section id="about">
     <div class="section-title">ABOUT</div>
-    <div class="section-content">
-      <p>Write something about yourself here.</p>
-    </div>
+    <p>Write something about yourself here.</p>
   </section>
-
-  <hr>
 
   <!-- Research Section -->
   <section id="research">
     <div class="section-title">RESEARCH</div>
-    <div class="section-content">
-      <p>Describe your current research projects.</p>
-    </div>
+    <p>Describe your current research projects.</p>
   </section>
-
-  <hr>
 
   <!-- Publications Section -->
   <section id="publications">
     <div class="section-title">PUBLICATIONS</div>
-    <div class="section-content">
-      <p>List your important publications with links.</p>
-    </div>
+    <p>List your important publications with links.</p>
   </section>
-
-  <hr>
 
   <!-- Activities Section -->
   <section id="activities">
     <div class="section-title">ACTIVITIES</div>
-    <div class="section-content">
-      <p>List your community engagements here.</p>
-    </div>
+    <p>List your community engagements here.</p>
   </section>
-
-  <hr>
 
   <!-- Contact Section -->
   <section id="contact">
     <div class="section-title">CONTACT</div>
-    <div class="section-content">
-      <p>Email: your.email@example.com</p>
-      <p>LinkedIn | GitHub | Twitter (optional icons later)</p>
-    </div>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn | GitHub | Twitter</p>
   </section>
 
   <footer>
     <p>&copy; 2024 Anna Maria Planitzer. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
