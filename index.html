@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AM Planitzer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Georgia, serif;
-      background-color: #F5F5DC; /* Light beige */
-      color: #333;
-      text-align: center;
+      font-family: "Century Gothic", sans-serif;
+      background-color: #C4A484; /* Mocha Beige */
+      color: black;
       scroll-behavior: smooth;
+      text-align: center;
     }
 
     /* Navbar */
@@ -21,34 +21,37 @@
       top: 0;
       width: 100%;
       background-color: #000;
-      color: white;
       display: flex;
-      justify-content: center; /* Center navbar */
-      gap: 20px;
+      justify-content: center;
       padding: 15px 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       z-index: 1000;
     }
 
     .navbar a {
-      color: white;
+      color: #C4A484; /* Same color as background */
       text-decoration: none;
-      font-size: 14px;
+      margin: 0 15px;
+      font-size: 16px;
       font-weight: bold;
     }
 
     .navbar a:hover {
-      color: #ffd166;
+      color: #FFD166;
     }
 
-    /* Home Section */
+    /* Sections */
+    section {
+      padding: 80px 40px;
+      width: 60%;
+      margin: auto;
+    }
+
     #home {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh; /* Full-screen height */
-      padding: 20px;
+      padding-top: 120px;
     }
 
     .profile-pic {
@@ -59,49 +62,42 @@
       border: 3px solid black;
     }
 
-    h1 {
-      font-size: 24px;
+    h1, h3 {
       margin: 10px 0;
     }
 
-    h3 {
-      color: #555;
-      font-size: 18px;
-      margin: 5px 0;
-    }
-
     .university-link {
-      color: #8B5E3B;
       font-weight: bold;
       text-decoration: none;
     }
 
-    .university-link:hover {
-      text-decoration: underline;
-    }
-
-    /* Section Styling */
-    section {
-      padding: 80px 20px;
-    }
-
+    /* Section Titles */
     .section-title {
       font-size: 24px;
       font-weight: bold;
-      text-transform: uppercase; /* All CAPITAL LETTERS */
       margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    /* Black Section Dividers */
+    hr {
+      border: none;
+      height: 2px;
+      background-color: black;
+      width: 50%;
+      margin: 40px auto;
     }
 
     /* Footer */
     footer {
       background-color: #000;
       color: white;
+      text-align: center;
       padding: 10px;
     }
   </style>
 </head>
 <body>
-
   <nav class="navbar">
     <a href="#home">HOME</a>
     <a href="#about">ABOUT</a>
@@ -119,11 +115,15 @@
     <a class="university-link" href="https://www.univie.ac.at" target="_blank">University of Vienna</a>
   </section>
 
+  <hr>
+
   <!-- About Section -->
   <section id="about">
     <div class="section-title">ABOUT</div>
     <p>Write something about yourself here.</p>
   </section>
+
+  <hr>
 
   <!-- Research Section -->
   <section id="research">
@@ -131,11 +131,15 @@
     <p>Describe your current research projects.</p>
   </section>
 
+  <hr>
+
   <!-- Publications Section -->
   <section id="publications">
     <div class="section-title">PUBLICATIONS</div>
     <p>List your important publications with links.</p>
   </section>
+
+  <hr>
 
   <!-- Activities Section -->
   <section id="activities">
@@ -143,16 +147,17 @@
     <p>List your community engagements here.</p>
   </section>
 
+  <hr>
+
   <!-- Contact Section -->
   <section id="contact">
     <div class="section-title">CONTACT</div>
     <p>Email: your.email@example.com</p>
-    <p>LinkedIn | GitHub | Twitter</p>
+    <p>LinkedIn | GitHub | Twitter (optional icons later)</p>
   </section>
 
   <footer>
     <p>&copy; 2024 Anna Maria Planitzer. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
