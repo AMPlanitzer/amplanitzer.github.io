@@ -8,9 +8,10 @@
   <style>
     body {
       margin: 0;
-      font-family: "Andale Mono", monospace;
-      background-color: #F6E3BA; /* beige final */
+      font-family: 'Andale Mono', monospace;
+      background-color: #DFF6F0; /* Helles Pastell-Türkis */
       color: black;
+      text-align: center;
       scroll-behavior: smooth;
     }
 
@@ -19,32 +20,29 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: #000;
+      background-color: black;
       color: white;
       display: flex;
       justify-content: center;
-      padding: 15px 30px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 15px 0;
       z-index: 1000;
     }
 
     .navbar a {
-      color: white; /* White text in the black navbar */
+      color: white;
       text-decoration: none;
       margin: 0 15px;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
     }
 
     .navbar a:hover {
-      color: #ffd166;
+      color: #FFD700; /* Gold beim Hover */
     }
 
-    /* Sections */
-    section {
-      padding: 80px 40px;
-      margin-top: 80px;
-      text-align: center;
+    /* Home Section */
+    #home {
+      padding: 120px 20px 60px;
     }
 
     .profile-container {
@@ -59,38 +57,34 @@
       border: 3px solid black;
     }
 
-    h1, h3 {
+    h1 {
+      font-size: 22px;
+      margin: 10px 0;
+    }
+
+    h3 {
+      font-size: 16px;
       margin: 5px 0;
     }
 
     .university-link {
-      color: black; /* Black text for links */
+      color: black; /* Link in Schwarz */
       text-decoration: underline;
       font-weight: bold;
     }
 
-    a {
-      color: black; /* All links in black */
-      text-decoration: underline;
+    /* Sections */
+    section {
+      padding: 60px 20px;
     }
 
-    footer {
-      background-color: #000;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-
-    /* Section Titles */
     .section-title {
       font-size: 24px;
       font-weight: bold;
-      margin-bottom: 20px;
-      color: black;
       text-transform: uppercase;
     }
 
-    /* Section Dividers */
+    /* Trennlinien */
     hr {
       border: none;
       height: 2px;
@@ -98,9 +92,20 @@
       width: 50%;
       margin: 40px auto;
     }
+
+    /* Footer */
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Navigation -->
   <nav class="navbar">
     <a href="#home">HOME</a>
     <a href="#about">ABOUT</a>
@@ -113,7 +118,9 @@
   <!-- Home Section -->
   <section id="home">
     <div class="profile-container">
-      <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-pic">
+      <img src="https://github.com/AMPlanitzer/website-assets/blob/main/Foto_Profil_PolCom%20Website.png" 
+           alt="Profilbild" 
+           class="profile-pic">
       <h1>Anna Maria Planitzer</h1>
       <h3>PhD Candidate in Political Communication</h3>
       <a class="university-link" href="https://www.univie.ac.at" target="_blank">University of Vienna</a>
@@ -164,5 +171,6 @@
   <footer>
     <p>&copy; 2024 Anna Maria Planitzer. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
