@@ -9,13 +9,12 @@
     body {
       margin: 0;
       font-family: 'Andale Mono', monospace;
-      background-color: #DFF6F5; /* Helles Pastell-Türkis */
+      background-color: #DFF6F5;
       color: black;
       text-align: center;
       scroll-behavior: smooth;
     }
 
-    /* Navbar */
     .navbar {
       position: fixed;
       top: 0;
@@ -37,34 +36,32 @@
     }
 
     .navbar a:hover {
-      color: #FFD700; /* Gold beim Hover */
+      color: #FFD700;
     }
 
-    /* Home Section */
-  #home {
-  background-color: #DFF6F5; /* Pastell Türkis */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;  /* Automatische Höhe, damit das Bild nicht gequetscht wird */
-  padding: 120px 40px; /* Mehr Platz für das Bild */
-}
+    #home {
+      background-color: #DFF6F5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      padding: 120px 40px;
+    }
 
     .profile-container {
       text-align: center;
     }
 
     .profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: auto;
-  border: 3px solid black;
-}
-
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: auto;
+      border: 3px solid black;
+    }
 
     h1 {
       font-size: 22px;
@@ -77,12 +74,11 @@
     }
 
     .university-link {
-      color: black; /* Link in Schwarz */
+      color: black;
       text-decoration: underline;
       font-weight: bold;
     }
 
-    /* Sections */
     section {
       padding: 60px 20px;
     }
@@ -93,7 +89,6 @@
       text-transform: uppercase;
     }
 
-    /* Trennlinien */
     hr {
       border: none;
       height: 2px;
@@ -102,19 +97,34 @@
       margin: 40px auto;
     }
 
-    /* Footer */
-    footer {
-      background-color: black;
-      color: white;
+    #publications ol {
+      max-width: 66%;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    #publications a {
+      color: purple;
+    }
+
+    #publications a[href*="10.1177/00936502231201"] {
+      color: blue;
+    }
+
+    .social-links {
       text-align: center;
-      padding: 10px;
-      margin-top: 40px;
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="navbar">
     <a href="#home">HOME</a>
     <a href="#about">ABOUT</a>
@@ -124,119 +134,47 @@
     <a href="#contact">CONTACT</a>
   </nav>
 
-  <!-- Home Section -->
-  <section id="home">
+<section id="home">
     <div class="profile-container">
-      <img src=""https://raw.githubusercontent.com/AMPlanitzer/website-assets/main/Foto_Profil_PolCom_Website.png" 
+      <img src="https://raw.githubusercontent.com/AMPlanitzer/website-assets/main/Foto_Profil_PolCom_Website.png" 
            alt="Profilbild" 
            class="profile-pic">
       <h1>ANNA MARIA PLANITZER</h1>
-<h3>PhD Candidate in Political Communication</h3>
-<h3>
-  <a href="https://polcom.univie.ac.at" target="_blank">Research Associate with the PolCom Research Group</a>,  
-  <a href="https://publizistik.univie.ac.at/en/" target="_blank">Department of Communication</a>,  
-  <a href="https://www.univie.ac.at/en/" target="_blank">University of Vienna</a>
-</h3>
-  </section>
-
-  <hr>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="section-title">ABOUT</div>
-    <p>Write something about yourself here.</p>
-  </section>
-
-  <hr>
-
-  <!-- Research Section -->
-  <section id="research">
-    <div class="section-title">RESEARCH</div>
-    <p>Describe your current research projects.</p>
-  </section>
-
-  <hr>
-
-<!-- Publications Section -->
-<section id="publications">
-  <div class="section-title">PUBLICATIONS</div>
-  <ol reversed>
-    <li>
-      Schäfer, S. & <b>Planitzer, A. M.</b> (2025). User comments. In Nai, A., Grömping, M., & Wirz, D. (Eds). 
-      <i>Elgar Encyclopedia of Political Communication</i>. Edward Elgar Publishing. Accepted version. 
-      <a href="https://doi.org/10.31219/osf.io/rafqc_v1" target="_blank">https://doi.org/10.31219/osf.io/rafqc_v1</a>
-    </li>
-    <li>
-      Pachinger, P., Goldzycher, J., <b>Planitzer, A. M.</b>, Kusa, W., Hanbury, A., Neidhardt, J. (2024). 
-      AustroTox: A Dataset for Target-Based Austrian German Offensive Language Detection. 
-      In <i>Findings of the Association for Computational Linguistics: ACL 2024</i>. 
-      <a href="https://doi.org/10.48550/arXiv.2406.08080" target="_blank">https://doi.org/10.48550/arXiv.2406.08080</a>
-    </li>
-    <li>
-      Schäfer, S., Rebasso, I., Boyer, M. M., & <b>Planitzer, A. M.</b> (2023). 
-      Can We Counteract Hate? Effects of Online Hate Speech and Counter Speech on the Perception of Social Groups. 
-      <i>Communication Research</i>, 51(5), 553-579. 
-      <a href="https://doi.org/10.1177/00936502231201" target="_blank">https://doi.org/10.1177/00936502231201</a>
-    </li>
-    <li>
-      Pachinger, P., Hanbury, A., Neidhardt, J., & <b>Planitzer, A. M.</b> (2023). 
-      Toward Disambiguating the Definitions of Abusive, Offensive, Toxic, and Uncivil Comments. 
-      In <i>Proceedings of the 1st Workshop on Cross-Cultural Considerations in NLP (C3NLP)</i>. 
-      European Chapter of the Association for Computational Linguistics (EACL) 2023 (pp. 107-113). 
-      <a href="https://doi.org/10.18653/v1/2023.c3nlp-1.11" target="_blank">https://doi.org/10.18653/v1/2023.c3nlp-1.11</a>
-    </li>
-  </ol>
+      <h3>PhD Candidate in Political Communication</h3>
+      <h3>
+        Research Associate with the <a href="https://polcom.univie.ac.at" target="_blank">PolCom Research Group</a><br>
+        Department of Communication<br>
+        University of Vienna
+      </h3>
+    </div>
 </section>
 
-
   <hr>
 
-  <!-- Activities Section -->
-  <section id="activities">
-    <div class="section-title">ACTIVITIES</div>
-    <p>List your community engagements here.</p>
+  <section id="publications">
+    <div class="section-title">PUBLICATIONS</div>
+    <ol reversed style="text-align: center;">
+      <li>
+        Schäfer, S. & <b>Planitzer, A. M.</b> (2025). User comments. In Nai, A., Grömping, M., & Wirz, D. (Eds). 
+        <i>Elgar Encyclopedia of Political Communication</i>. Edward Elgar Publishing. Accepted version. 
+        <a href="https://doi.org/10.31219/osf.io/rafqc_v1" target="_blank">https://doi.org/10.31219/osf.io/rafqc_v1</a>
+      </li>
+    </ol>
   </section>
 
   <hr>
 
-<!-- Contact Section -->
-<section id="contact">
-  <div class="section-title">CONTACT</div>
-  <p>Email: <a href="mailto:anna.maria.planitzer@univie.ac.at">anna.maria.planitzer@univie.ac.at</a></p>
-  
-  <div class="social-links">
-    <a href="https://polcom.univie.ac.at/team/anna-maria-planitzer/" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/128/3237/3237472.png" alt="Website Icon"> Website
-    </a>
-    <a href="https://bsky.app/profile/amplanitzer.bsky.social" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Bluesky_Logo.svg" alt="Bluesky Icon"> Bluesky
-    </a>
-    <a href="https://www.linkedin.com/in/anna-maria-planitzer-987853313/" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="LinkedIn Icon"> LinkedIn
-    </a>
-    <a href="https://orcid.org/0000-0001-8181-6615" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID Icon"> ORCID
-    </a>
-    <a href="https://scholar.google.com/citations?user=MuUNIfEAAAAJ&hl=de" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/128/2875/2875349.png" alt="Google Scholar Icon"> Google Scholar
-    </a>
-  </div>
-</section>
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  margin-bottom: 8px;
-}
-
-.social-links img {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
+  <section id="contact">
+    <div class="section-title">CONTACT</div>
+    <p>Email: <a href="mailto:anna.maria.planitzer@univie.ac.at">anna.maria.planitzer@univie.ac.at</a></p>
+    <div class="social-links">
+      <b><a href="https://polcom.univie.ac.at/team/anna-maria-planitzer/" target="_blank">Website</a> | 
+      <a href="https://bsky.app/profile/amplanitzer.bsky.social" target="_blank">Bluesky</a> | 
+      <a href="https://www.linkedin.com/in/anna-maria-planitzer-987853313/" target="_blank">LinkedIn</a> | 
+      <a href="https://orcid.org/0000-0001-8181-6615" target="_blank">ORCID</a> | 
+      <a href="https://scholar.google.com/citations?user=MuUNIfEAAAAJ&hl=de" target="_blank">Google Scholar</a></b>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2024 Anna Maria Planitzer. All rights reserved.</p>
